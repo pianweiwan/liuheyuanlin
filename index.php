@@ -17,6 +17,10 @@ import('config');
 //自动加载类
 import('autoload');
 
+$router =  new Router();
+$router->run();
+
+
 
 
 

@@ -1,0 +1,14 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: ziqingli
+ * Date: 2016/5/11
+ * Time: 11:16
+ */
+
+    define('CORE_PATH', ROOT_PATH.'core'.DS);
+    define('VIEW_PATH', ROOT_PATH.'view'.DS);
+    define('COMPONENTS_PATH', ROOT_PATH.'components'.DS);
+    define('CONTROLLER_PATH', ROOT_PATH.'controller'.DS);
+    define('PLUGIN_PATH', ROOT_PATH.'plugin'.DS);
+
