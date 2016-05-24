@@ -1,0 +1,138 @@
+﻿body {FONT-SIZE: 12px; BACKGROUND:url(../images/bg.jpg);MARGIN: 0px auto; COLOR: #333; FONT-FAMILY: '����',Arial,Verdana,Sans-Serif}
+form,UL,ol,li,span,p,img,a img,dl,dd {BORDER-TOP-WIDTH:0px;BORDER-LEFT-WIDTH:0px;BORDER-BOTTOM-WIDTH: 0px;BORDER-RIGHT-WIDTH: 0px;PADDING:0px;MARGIN:0px auto;}
+ul,ol,li,dl,dd {LIST-STYLE-TYPE: none}
+A:link {COLOR: #353535; TEXT-DECORATION: none; outline-style: none}
+A:visited {COLOR: #353535; TEXT-DECORATION: none; outline-style: none}
+A:hover {COLOR: #1568ff; TEXT-DECORATION: none}
+.celar{height:0;font-size:1px;clear:both;line-height:0;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+strong{
+	font-weight: bold;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+i{
+font-style:normal !important;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration: none;}
+a:focus{outline: none;}
+input{font-family: "Microsoft YaHei", "΢���ź�", Arial, Helv, Helvetica, sans-serif;}
+body{
+	font-family: "Microsoft YaHei", "΢���ź�", Arial, Helv, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 25px;
+}
+
+/* ============ӦƸ��ť============== */
+a.button_2:link,a.button_2:visited{display:block;width:77px;height:33px;line-height:33px;background:url(../images/button_2.png) center top no-repeat;
+	border:none;font-weight:bold;cursor:pointer;text-align: center;letter-spacing: 0.5em;color:#FFFFFF;}
+a.button_2:hover{color:#FFFFFF;text-decoration: none;text-align: center;}
+
+.wright {width:176px;margin-top:20px; margin-bottom:10px;}
+.wright ul {padding-left:3px;}
+.wright ul li{width:141px;height:36px;line-height:20px; padding-left:35px;font-size:16px;font-family:'Microsoft YaHei',SimHei,sans-serif;color:#000; margin-bottom:10px;}
+
+.wright ul li a{text-decoration:none;padding-left:5px; font-size:16px;font-family:'Microsoft YaHei',SimHei,sans-serif;}
+.wright ul li.ok{color:#ff0000;}
+.wright ul li.ok a{color:#ff0000;}
+
+
+.pic_row{}
+.pic_row a{float: left;margin-right:4px;width:247px;height:132px;overflow: hidden; color:#FFFFFF;}
+.pic_row img{margin-bottom: -23px;}
+.pic_row h3{position: relative;top: 0;padding: 6px 15px 4px;line-height: 16px;background-color:rgba(0,0,0,0.6);background:rgba(0,0,0,.6);color: #fff;font-size:13px;
+
+}
+
+/*-moz-opacity:.66;filter:alpha(opacity=66);opacity:.66;-moz-opacity:.66;-khtml-opacity:.66;opacity:.66;}*/
+/* .pic_row a:hover h3{background-color: #CC2D24;color: #fff;} */
+.pic_row div, .bttd_tx div, .jgsj div{margin-top: -3px;height: 23px;line-height: 23px;overflow: hidden;	color: #fff;}
+.pic_row em, .bttd_tx em, .jgsj em{float: left;font-style: normal;}
+.pic_row span, .bttd_tx a, .jgsj span{float: right;font-size:10px;color: #fff;}
+
+
+
+
+
+
+.sli2{position: relative;margin-bottom: 30px;}
+.sli2_p{position: relative;width: 745px;height: 425px;border-radius: 5px 5px 0 0;overflow: hidden;}
+.sli2_p a, .sli2_p img{width: 745px;height: 425px;}
+.sli2_p a{position: absolute;left: 0;top: 0;display: none;}
+.sli2_b{margin: 5px auto 0;width: 700px;height: 84px;overflow: hidden;}
+.sli2_b_w{height: 84px;overflow: hidden;}
+.sli2_b_w img{float: left;margin-right: 5px;width: 132px;height: 80px;border: 2px solid #96979C;cursor: pointer;}
+.sli2_pv, .sli2_nt{position: absolute;bottom: 0;width: 18px;height: 84px;cursor: pointer;opacity: 0.8;filter:alpha(opacity:80);}
+.sli2_pv{left: 0;background: url(../images/left.png) no-repeat;}
+.sli2_nt{right: 0;background: url(../images/right.png) no-repeat;}
+.sli2_pv:hover, .sli2_nt:hover{opacity: 1;filter:alpha(opacity:100);}
+	
+	
+	
+#play {width:640px;text-align:center;position:relative;overflow:hidden;margin:5px auto;}
+#play .change_a {width:50%;height:100%;position:absolute;top:0;z-index:1;cursor:pointer;display:block;overflow:hidden;background:url(../images/51f063a87c624d5cbb61fec8994bca89.gif);}
+#play .prev_a {left:0;}
+#play .next_a {right:0}
+#play .change_a span {width:24px;height:43px;display:block;position:absolute;top:50%;margin-top:-21px;display:none}
+#play .prev_a span {background:url(left_../images/right.png) no-repeat 0px -50px;left:0;}
+#play .next_a span {background:url(left_../images/right.png) no-repeat -30px -50px;right:0;}
+#play .img_ul {position:relative;z-index:1;}
+.img_hd  {width:640px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background-color:#eee;overflow:hidden;height:66px;padding:2px 0;margin-top:15px;margin:5px auto;position:relative;}
+.img_hd ul {position:absolute;z-index:1}
+.img_hd ul li {float:left;width:80px;height:60px;border:3px solid #eee;cursor:pointer;margin:0 3px 0 1px;overflow:hidden;*display:inline;padding:1px;text-align:center}
+.img_hd ul li img {height:60px;}
+.img_hd ul li.on{ border-color:rgb(45, 150, 233);}
+.img_hd .bottom_a {background:url(left_../images/right.png) no-repeat;width:22px;height:22px;position:absolute;display:block;top:50%;margin-top:-11px;cursor:pointer;z-index:10}
+.img_hd .prev_a { background-position:0 -24px;left:5px;}
+.img_hd .next_a { background-position:-30px -24px;right:5px;}
+
+
+.mypage span{margin-left:5px;margin-right:5px;}
+.mypage a{ width:100px; margin-left:5px; margin-right:5px;}
+
+html { overflow:-moz-scrollbars-vertical; overflow-y:scroll; overflow-x:hidden; }
+.bannerwch{width:1430px;margin:0 auto;position:relative;left:50%;margin-left: -715px;}
+
+#wchlink a:hover{color:#1568ff;}
