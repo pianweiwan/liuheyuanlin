@@ -11,12 +11,16 @@ function autoload($className) {
     $path = CORE_PATH.strtolower($className).'.class.php';
     if(file_exists($path)) {
         require_once($path);
-    }else{
-        //否则加载组件
-        $path = COMPONENTS_PATH.strtolower($className).'.php';
-        if(file_exists($path)) {
-            require_once($path);
-        }
+    }
+    //否则加载组件
+    $path = COMPONENTS_PATH.strtolower($className).'.php';
+    if(file_exists($path)) {
+        require_once($path);
+    }
+    //要么加载model
+    $path = MODEL_PATH.$className.'.php';
+    if(file_exists($path)) {
+        require_once($path);
     }
 }
 

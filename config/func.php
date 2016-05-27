@@ -9,7 +9,7 @@
 function param($file, $config = null) {
     $path  = __DIR__.DS.$file.'.php';
     if(file_exists($path)) {
-        $arr = require_once($path);
+        $arr = require($path);
         if(!is_null($config)) {
             $arr = isset($arr[$config]) ? $arr[$config] : array();
         }

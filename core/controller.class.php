@@ -13,9 +13,19 @@ class Controller{
             $smarty->assign($key, $value);
         }
         $class = get_called_class();
-        $class = lcfirst(rtrim($class, 'Controller'));
+        $class =  str_replace('Controller', '',$class);
+
         $smarty->setTemplateDir(VIEW_PATH.$class);
         $smarty->display($tpl.'.tpl');
+    }
+
+    public function checkLogin() {
+        if(!isset($_COOKIE['admin'])) {
+            die('未登录');
+        }
+        if($_COOKIE['admin'] != 'admin') {
+            die('未登录');
+        }
     }
 
 }

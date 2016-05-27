@@ -6,7 +6,7 @@
  * Time: 11:34
  */
 return array(
-    'dsn' => 'mysql:host=localhost;dbname=test',
+    'dsn' => 'mysql:host=localhost;dbname=business',
     'username' => 'root',
     'password' => '',
 );

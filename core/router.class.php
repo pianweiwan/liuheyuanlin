@@ -31,9 +31,7 @@ class Router{
         if(!class_exists($class)) {
             exit('访问错误');
         }
-
         $ins = new $class;
-
         $method = 'action'.ucfirst($this->method);
         if(!method_exists($ins, $method)) {
             exit('访问错误');
@@ -46,6 +44,9 @@ class Router{
     //参数校验规则
     public function parse() {
         $uri = trim($_SERVER['REQUEST_URI'],'/');
+        if(stripos($uri, '?')) {
+            $uri = substr($uri,0,stripos($uri,'?'));
+        }
         $arr = array();
         if(empty($uri)) {
             $uri = param('param', 'default_route');
@@ -54,7 +55,6 @@ class Router{
 
         $class = $arr[0];
         $method = $arr[1];
-
         $this->class = $class;
         $this->method = $method;
     }

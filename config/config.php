@@ -11,4 +11,7 @@
     define('COMPONENTS_PATH', ROOT_PATH.'components'.DS);
     define('CONTROLLER_PATH', ROOT_PATH.'controller'.DS);
     define('PLUGIN_PATH', ROOT_PATH.'plugin'.DS);
+    define('CONFIG_PATH', ROOT_PATH.'config'.DS);
+    define('MODEL_PATH', ROOT_PATH.'model'.DS);
+
 
