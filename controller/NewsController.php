@@ -85,6 +85,18 @@ class NewsController extends Controller{
     }
 
     public function actionOne() {
+        $id = isset($_REQUEST['id']) ? intval($_REQUEST['id']) : null;
+        if(!$id) {
+            return $this->error('参数错误');
+        }
+        $news = NewsModel::instance()->getOne(['id'=>$id,'status'=>1]);
+        if(empty($news)) {
+            return $this->error('未找到该新闻');
+        }
+
+        $data = array();
+        $data['news'] = $news;
+        return $this->display('one',$data);
         
     }
 
