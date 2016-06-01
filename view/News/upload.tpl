@@ -1,13 +1,6 @@
 {include file="/view/mgr/layout/header.tpl"}
 <div class="m-right">
     <div class="right-nav">
-        <ul>
-            <li><img src="/static/mgr/images/home.png"></li>
-            <li style="margin-left:25px;">您当前的位置：</li>
-            <li><a href="#">系统公告</a></li>
-            <li>></li>
-            <li><a href="#">最新公告</a></li>
-        </ul>
     </div>
     <div class="main" style="margin-left:6px">
         <script type="text/javascript" charset="utf-8" src="/static/js/ueditor/ueditor.config.js"></script>
@@ -71,11 +64,12 @@
         $(".publish").click(function() {
             var title = $(".title").val();
             var content = UE.getEditor('editor').getContent();
-            $.post('/news/publish', {title:title,content:content}, function(jdata) {
+            $.get('/news/publish', {title:title,content:content}, function(jdata) {
                 if(jdata['code'] != 200) {
                     alert('发布失败 '+jdata['msg']);
                 }else {
                     alert('发布成功');
+                    window.location.href = '/news/list';
                 }
             },'json');
         });

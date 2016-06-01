@@ -172,36 +172,14 @@
             </script>
             <div style="width:470px;margin:auto;margin-top:15px;color:#606060;font-size:14px;font-family:'Microsoft YaHei',SimHei,sans-serif;">
             <span style="float:left; width:130px;">
-            <a href="/list/?19_1.html" target="_blank"><span
-                        id="sel1" onmouseover="HoverLi1(1);" class="wch1">企业动态</span></a> / <a href="/list/?20_1.html" target="_blank"><span
-                            id="sel2" onmouseover="HoverLi1(2);" class="wch2">行业新闻</span></a></span><span style="float:left">...............................................................................</span>
-                <a href="/list/?5_1.html" target="_blank" style="color:#606060; float:right" onMouseOver="this.style.color='#ff0101'"  onMouseOut="this.style.color='#606060'" >More>></a>
+            {*<a href="/list/?19_1.html" target="_blank"><span id="sel1" onmouseover="HoverLi1(1);" class="wch1">企业动态</span></a>*}
+            <a href="/list/?20_1.html" target="_blank"><span id="sel2" onmouseover="HoverLi1(2);" class="wch2">行业新闻</span></a></span><span style="float:left">...............................................................................</span>
+            <a href="/news/front" target="_blank" style="color:#606060; float:right" onMouseOver="this.style.color='#ff0101'"  onMouseOut="this.style.color='#606060'" >More>></a>
             </div>
             <div style=" clear:both;height:15px;"></div>
             <DIV class=dis id=tbc_01>
-                <div style="width:470px;margin:auto;">
-
-                    <a href="/content/?946.html" target="_blank"  title="贺我公司中标吉利区黄河湿地园区东入口和静思园建设工程施工项目">
-                        <div style="width:100%; height:100px;color:#606060;font-size:14px;">
-                            <div style="float:left; width:143px;margin-right:7px;"><img src="/static/picture/201605240958091489.png" width="143" height="107" /></div>
-                            <div style="float:left; width:320px;margin-top:5px;">
-                                <div style="float:left;width:230px;font-weight:bold;">贺我公司中标吉利区黄河湿地园...</div>
-                                <div style="float:right;width:90px;">[2016-05-24]</div>
-                            </div>
-                            <div style="height:40px;"></div>
-                            <div style="float:left;width:220px;line-height:22px;">河南省机电设备招标股份有限公司受洛阳市吉泰实业有限公司委托，就吉利区黄河湿地园区...</div>
-                            <div style="float:right;margin-top:45px;" onMouseOver="this.style.color='#3489fc'" onMouseOut="this.style.color='#606060'">查看更多>></div>
-                        </div>
-                    </a>
-
-                </div>
-
                 <div style="clear:both;height:10px;"></div>
                 <div style="width:470px;margin:auto">
-
-
-
-
                     <div style="width:100%;height:26px;color:#606060;font-size:14px;">
                      <span style="float:left">
                         <img src="/static/picture/arro.jpg" style="margin-right:10px;" />
@@ -209,7 +187,6 @@
                      </span>
                         <span style="float:right">[2015-12-12]</span>
                     </div>
-
 
 
                     <div style="width:100%;height:26px;color:#606060;font-size:14px;">
@@ -461,8 +438,6 @@
 
 
                 <a href="http://www.baidu.com" target="_blank">百度</a>
-
-
 
                 / <a href="http://www.it506.com" target="_blank">郑州网站建设</a>
 

@@ -22,6 +22,6 @@ class LoginController extends Controller {
                 setcookie('admin','admin',-1,'/');
             }
         }
-        var_dump($_COOKIE);exit;
+        header('Location:/news/list');
     }
 }

@@ -13,7 +13,7 @@ function autoload($className) {
         require_once($path);
     }
     //否则加载组件
-    $path = COMPONENTS_PATH.strtolower($className).'.php';
+    $path = COMPONENTS_PATH.$className.'.php';
     if(file_exists($path)) {
         require_once($path);
     }

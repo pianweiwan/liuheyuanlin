@@ -10,15 +10,11 @@ class Db{
 
     public $_db = null;
 
-    public static $_instance = null;
-
     public static $_sql = '';
 
     private $charset = 'utf8';
 
-
-    public function instance($dsn = '', $username = '', $password = '') {
-        if(!isset(self::$_instance)) {
+    public function __construct($dsn = '', $username = '', $password = '') {
             if(!$dsn) {
                 $dsn =  param('db', 'dsn');
                 $username = param('db', 'username');
@@ -26,12 +22,42 @@ class Db{
             }
             $this->_db = new PDO($dsn, $username, $password);
             $this->_db->exec('set names '.$this->charset);
-            self::$_instance = new Db();
-        }
-        return self::$_instance;
     }
 
-    public function select($table,$params = array, $)
+    public function select($sql = '', $params = array(), $order = '') {
+        $res = $this->_db->prepare($sql);
+        $res->execute($params);
+        $s = $res->fetchAll(PDO::FETCH_ASSOC);
+        return $s;
+    }
+
+
+    public function insert( $sql, $params) {
+        $res = $this->_db->prepare($sql);
+        $res->execute($params);
+        $s = $this->_db->lastInsertId();
+        return $s;
+    }
+
+    public function delete($sql, $params = array()) {
+        $res = $this->_db->prepare($sql);
+        $res->execute($params);
+        $s = $res->rowCount();
+        return $s;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

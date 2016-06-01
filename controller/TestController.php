@@ -56,8 +56,15 @@ HTML;
     }
 
     public function actionTest3() {
-        $s = NewsModel::instance()->select();
+        $db = new Db();
+        $s = $db->select('bg_cate');
         var_dump($s);exit;
+    }
+
+
+    public function actionTest4() {
+        $news = NewsModel::instance()->getNews();
+        var_dump($news);exit;
     }
 
 }
