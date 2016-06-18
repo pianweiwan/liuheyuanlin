@@ -13,5 +13,6 @@
     define('PLUGIN_PATH', ROOT_PATH.'plugin'.DS);
     define('CONFIG_PATH', ROOT_PATH.'config'.DS);
     define('MODEL_PATH', ROOT_PATH.'model'.DS);
+    define('FILE_PATH', ROOT_PATH.'files'.DS);
 
 

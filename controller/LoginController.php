@@ -15,6 +15,7 @@ class LoginController extends Controller {
     }
 
     public function actionLogin() {
+        header("Content-Type: text/html; charset=utf8");
         $email = $_REQUEST['email'];
         $password = $_REQUEST['password'];
         if(md5($password)=='be223d6e1280cfa60273f661cee27eab') {

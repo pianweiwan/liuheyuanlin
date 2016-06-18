@@ -15,6 +15,13 @@ class NewsController extends Controller{
 
 
     public function actionList($params = array()) {
+        if(!isset($_COOKIE['admin'])) {
+            return $this->error('管理员未登录');
+        }
+        if($_COOKIE['admin'] != 'admin') {
+            return $this->error('管理员未登录');
+        }
+
         $page = $this->_R('page');
         $pagesize = $this->_R('pagesize');
 
@@ -24,8 +31,6 @@ class NewsController extends Controller{
         $data['pagesize'] = $pagesize;
         $data['news'] = $res;
         return $this->display('list', $data);
-
-
     }
 
     public function actionPublish() {

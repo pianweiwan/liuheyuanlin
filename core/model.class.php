@@ -61,7 +61,7 @@ abstract class  Model{
         return $this->_db->select($sql, $params);
     }
 
-    public function row($params = array(), $select = '*', $order) {
+    public function row($params = array(), $select = '*', $order = '') {
         $table = $this->_table;
         $sql = 'select '.$select. ' from '.$table.' where 1=1 ';
         $bindParams = array();

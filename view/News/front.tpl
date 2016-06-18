@@ -120,7 +120,7 @@
 <table width="98%" border="0" cellpadding="0" cellspacing="0">
 {foreach from=$news item=each}
     <tr>
-        <td width="85%" align="left" height="24"><img src="/static/picture/news/arro.jpg" style="margin-right:10px;" /> <a href="/content/?946.html" target="_blank" title="{$each['title']}">{$each['title']}</a></td>
+        <td width="85%" align="left" height="24"><img src="/static/picture/news/arro.jpg" style="margin-right:10px;" /> <a href="/news/one?id={$each['id']}" target="_blank" title="{$each['title']}">{$each['title']}</a></td>
         <td width="15%"  align="right">{date('Y-m-d', $each['time'])}</td>
     </tr>
 {/foreach}
@@ -131,7 +131,7 @@
     </tr>
 </table>
     </td>
-
+</tr>
 
 
 </div>
