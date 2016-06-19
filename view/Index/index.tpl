@@ -1,4 +1,4 @@
-{include file="/view/layout/header.tpl"}
+{include file="view/layout/header.tpl"}
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>六合园林有限公司-官网</title>
@@ -133,13 +133,13 @@
 
             <div class="pic_row">
 
-                <a href="/list/?12_1.html"><img src="/static/picture/201503230900315045.jpg" width="247" height="132"><h3 style="margin-top: 0px;">设计案例 <div><em>Design </em><span>More&gt;&gt;</span></div></h3></a>
+                <a href="/list/?12_1.html"><img src="/static/images/1_1.jpg" width="247" height="132"><h3 style="margin-top: 0px;">设计案例 <div><em>Design </em><span>More&gt;&gt;</span></div></h3></a>
 
-                <a href="/list/?11_1.html"><img src="/static/picture/2015032309005672.jpg" width="247" height="132"><h3 style="margin-top: 0px;">工程案例 <div><em>Engineering </em><span>More&gt;&gt;</span></div></h3></a>
+                <a href="/list/?11_1.html"><img src="/static/images/1_2.jpg" width="247" height="132"><h3 style="margin-top: 0px;">工程案例 <div><em>Engineering </em><span>More&gt;&gt;</span></div></h3></a>
 
-                <a href="/about/?3.html"><img src="/static/picture/201503230902295224.jpg" width="247" height="132"><h3 style="margin-top: 0px;">苗圃基地 <div><em>Nursery </em><span>More&gt;&gt;</span></div></h3></a>
+                <a href="/about/?3.html"><img src="/static/images/1_3.jpg" width="247" height="132"><h3 style="margin-top: 0px;">苗圃基地 <div><em>Nursery </em><span>More&gt;&gt;</span></div></h3></a>
 
-                <a href="/list/?4_1.html"style="margin-right:0px;"><img src="/static/picture/20150323091323730.jpg" width="247" height="132"><h3 style="margin-top: 0px;">园林资材 <div><em>Materials </em><span>More&gt;&gt;</span></div></h3></a>
+                <a href="/list/?4_1.html"style="margin-right:0px;"><img src="/static/images/1_4.jpg" width="247" height="132"><h3 style="margin-top: 0px;">园林资材 <div><em>Materials </em><span>More&gt;&gt;</span></div></h3></a>
 
             </div>
         </td>
@@ -272,17 +272,7 @@
 </div>
 <div style="width:100%;height:36px;background-color:#dfdfdf;">
     <table width="1000" height="36" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#DFDFDF" style="margin:auto;">
-        <tr>
-            <td width="80" style="color:#535353;font-size:14px;" onMouseOver="wchlink.style.display='block'">
-                友情链接
-            </td>
-            <td width="200">技术支持：<a href="http://www.it506.com" target="_blank">和美科技</a></td>
-            <td width="614">Copyright (c) 2008-2015 版权所有：河南省绿洲园林有限公司 网站备案：豫ICP备11011632号-1<br></td>
-            <td width="106" align="right">
-                <img src="/static/picture/foot1.png" style="float:left;margin-right:10px;" onMouseOver="this.src='/Templates/cn/images_my/foot1_ok.png'" onMouseOut="this.src='picture/foot1.png'" />
-                <img src="/static/picture/foot2.png" style="float:left;margin-right:10px;" onMouseOver="this.src='/Templates/cn/images_my/foot2_ok.png'" onMouseOut="this.src='picture/foot2.png'" />
-                <img src="/static/picture/foot3.png" style="float:left" onMouseOver="this.src='/Templates/cn/images_my/foot3_ok.png'" onMouseOut="this.src='picture/foot3.png'" /> </td>
-        </tr>
+
     </table>
 </div>
 

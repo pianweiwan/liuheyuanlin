@@ -1,4 +1,4 @@
-{include file="/view/layout/header.tpl"}
+{include file="view/layout/header.tpl"}
 {literal}
 <style type="text/css">
     .menu {font-family: verdana, sans-serif;position:relative;font-size:0.85em;width:700px;height:43px;margin:auto; z-index:99}

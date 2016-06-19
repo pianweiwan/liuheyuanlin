@@ -8,7 +8,7 @@
 
 header("Content-Type: text/html; charset=UTF-8");
 define('DS', DIRECTORY_SEPARATOR);
-define('ROOT_PATH', __DIR__.DS);
+define('ROOT_PATH', dirname(__FILE__).DS);
 $uri = $_SERVER['REQUEST_URI'];
 ini_set('date.timezone','Asia/Shanghai');
 require_once('config/func.php');

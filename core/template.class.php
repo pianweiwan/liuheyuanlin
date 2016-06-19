@@ -9,7 +9,7 @@
 class Template{
 
     public static function _instance() {
-        require_once(PLUGIN_PATH.'smarty'.DS.'smarty.class.php');
+        require_once(PLUGIN_PATH.'smarty'.DS.'Smarty.class.php');
         return new Smarty();
     }
 

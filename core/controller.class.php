@@ -19,6 +19,7 @@ class Controller{
             $class = get_called_class();
             $class =  str_replace('Controller', '',$class);
             $smarty->setTemplateDir(VIEW_PATH.$class);
+            $smarty->caching=false;
         }
         $smarty->display($tpl.'.tpl');
     }

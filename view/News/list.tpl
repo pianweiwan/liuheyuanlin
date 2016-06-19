@@ -1,4 +1,4 @@
-{include file="/view/mgr/layout/header.tpl"}
+{include file="view/mgr/layout/header.tpl"}
 <div class="m-right">
     <div class="right-nav">
         <a href="/news/upload" style="margin-left: 10px;">发布新闻</a>

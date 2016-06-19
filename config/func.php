@@ -7,7 +7,7 @@
 */
 
 function param($file, $config = null) {
-    $path  = __DIR__.DS.$file.'.php';
+    $path  = dirname(__FILE__).DS.$file.'.php';
     if(file_exists($path)) {
         $arr = require($path);
         if(!is_null($config)) {
@@ -20,7 +20,7 @@ function param($file, $config = null) {
 }
 
 function import($file){
-    $path = __DIR__.DS.$file.'.php';
+    $path = dirname(__FILE__).DS.$file.'.php';
     if(file_exists($path)) {
         require_once($path);
     }

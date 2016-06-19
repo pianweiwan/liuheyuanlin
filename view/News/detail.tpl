@@ -1,4 +1,4 @@
-{include file="/view/mgr/layout/header.tpl"}
+{include file="view/mgr/layout/header.tpl"}
 <div class="m-right">
     <div class="right-nav">
     </div>

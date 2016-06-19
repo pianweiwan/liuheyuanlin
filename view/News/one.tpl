@@ -1,4 +1,4 @@
-{include file="/view/layout/header.tpl"}
+{include file="view/layout/header.tpl"}
 
 {literal}
 <style type="text/css">
