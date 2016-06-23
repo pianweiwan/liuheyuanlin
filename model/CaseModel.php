@@ -29,7 +29,6 @@ class CaseModel extends Model{
 
         $res = $this->insert($params);
         return $res;
-
     }
 
 }

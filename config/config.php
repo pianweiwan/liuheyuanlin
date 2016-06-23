@@ -8,6 +8,7 @@
 
     define('CORE_PATH', ROOT_PATH.'core'.DS);
     define('VIEW_PATH', ROOT_PATH.'view'.DS);
+    define('STATIC_PATH', ROOT_PATH.'static'.DS);
     define('COMPONENTS_PATH', ROOT_PATH.'components'.DS);
     define('CONTROLLER_PATH', ROOT_PATH.'controller'.DS);
     define('PLUGIN_PATH', ROOT_PATH.'plugin'.DS);

@@ -35,7 +35,7 @@
                 </div>
             </li>
             <li>
-                <h4 class="M3"><span></span><a href="/design/list">工程案例</a></h4>
+                <h4 class="M3"><span></span><a href="/case/list">工程案例</a></h4>
                 {*<div class="list-item none">*}
                     {*<a href=''>视频管理</a>*}
                     {*<a href=''>视频上传</a>*}

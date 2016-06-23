@@ -117,13 +117,13 @@
 
 <div class="wch_nav_sub subno" id="wch2" onmouseover="wch2.className='wch_nav_sub subok';">
 
-<a href="/list/?22_1.html" >小区庭院</a>
+{*<a href="/list/?22_1.html" >小区庭院</a>*}
 
-<a href="/list/?23_1.html" >公园广场</a>
+{*<a href="/list/?23_1.html" >公园广场</a>*}
 
-<a href="/list/?25_1.html" >校园厂区</a>
+{*<a href="/list/?25_1.html" >校园厂区</a>*}
 
-<a href="/list/?24_1.html" >滨河道路</a>
+{*<a href="/list/?24_1.html" >滨河道路</a>*}
 
 </div>
 
@@ -160,54 +160,54 @@
 <tr><td colspan="3" height="20"><img src="/static/picture/lxwm_line.jpg" /></td></tr>
 <tr>
 <td colspan="3" valign="top" style="line-height:28px;font-size:14px">
+    {foreach from=$cases item=item}
+        <div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
+            <a href="/content/?881.html" target="_blank" title="{$item['title']}"><img src="{$item['cover']}" width="180" height="120"><br>{$item['title']}</a>
+        </div>
+    {/foreach}
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?882.html" target="_blank" title="小游园"><img src="picture/201601111733004299.jpg" width="180" height="120"><br>小游园</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?881.html" target="_blank" title="综合保税区"><img src="picture/201601111702417266.jpg" width="180" height="120"><br>综合保税区</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?880.html" target="_blank" title="某医院高等专科学校"><img src="picture/201601111629071352.jpg" width="180" height="120"><br>某医院高等专科学...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?882.html" target="_blank" title="小游园"><img src="picture/201601111733004299.jpg" width="180" height="120"><br>小游园</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?645.html" target="_blank" title="某道路绿化景观"><img src="picture/201505041045177836.jpg" width="180" height="120"><br>某道路绿化景观</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?880.html" target="_blank" title="某医院高等专科学校"><img src="picture/201601111629071352.jpg" width="180" height="120"><br>某医院高等专科学...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?644.html" target="_blank" title="某高端商务中心景观方案"><img src="picture/201505041038109774.jpg" width="180" height="120"><br>某高端商务中心景...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?645.html" target="_blank" title="某道路绿化景观"><img src="picture/201505041045177836.jpg" width="180" height="120"><br>某道路绿化景观</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?643.html" target="_blank" title="邓州市湍滨南路（三贤路北——大丁桥）景观方案"><img src="picture/201505041017442987.jpg" width="180" height="120"><br>邓州市湍滨南路（...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?644.html" target="_blank" title="某高端商务中心景观方案"><img src="picture/201505041038109774.jpg" width="180" height="120"><br>某高端商务中心景...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?642.html" target="_blank" title="降温增湿设备展示方案"><img src="picture/201505041011501642.jpg" width="180" height="120"><br>降温增湿设备展示...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?643.html" target="_blank" title="邓州市湍滨南路（三贤路北——大丁桥）景观方案"><img src="picture/201505041017442987.jpg" width="180" height="120"><br>邓州市湍滨南路（...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?641.html" target="_blank" title="某街头游园景观改造方案"><img src="picture/201505041005013538.jpg" width="180" height="120"><br>某街头游园景观改...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?642.html" target="_blank" title="降温增湿设备展示方案"><img src="picture/201505041011501642.jpg" width="180" height="120"><br>降温增湿设备展示...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?640.html" target="_blank" title="某游园景观方案"><img src="picture/201505040956264896.jpg" width="180" height="120"><br>某游园景观方案</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?641.html" target="_blank" title="某街头游园景观改造方案"><img src="picture/201505041005013538.jpg" width="180" height="120"><br>某街头游园景观改...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?639.html" target="_blank" title="某水泥厂景观方案"><img src="picture/20150504094436193.jpg" width="180" height="120"><br>某水泥厂景观方案</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?640.html" target="_blank" title="某游园景观方案"><img src="picture/201505040956264896.jpg" width="180" height="120"><br>某游园景观方案</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?638.html" target="_blank" title="三门峡市S249道路绿化景观生态恢复"><img src="picture/201505040933535161.jpg" width="180" height="120"><br>三门峡市S249...</a>*}
+{*</div>*}
 
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?639.html" target="_blank" title="某水泥厂景观方案"><img src="picture/20150504094436193.jpg" width="180" height="120"><br>某水泥厂景观方案</a>
-</div>
-
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?638.html" target="_blank" title="三门峡市S249道路绿化景观生态恢复"><img src="picture/201505040933535161.jpg" width="180" height="120"><br>三门峡市S249...</a>
-</div>
-
-<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">
-<a href="/content/?637.html" target="_blank" title="周口港区道路绿化景观方案"><img src="picture/201505040928074619.jpg" width="180" height="120"><br>周口港区道路绿化...</a>
-</div>
+{*<div style="float:left;line-height:24px;text-align:center;background-color:#FFF;padding:5px;">*}
+{*<a href="/content/?637.html" target="_blank" title="周口港区道路绿化景观方案"><img src="picture/201505040928074619.jpg" width="180" height="120"><br>周口港区道路绿化...</a>*}
+{*</div>*}
 
 <div style="clear:both;height:30px;"></div>
 <DIV style="text-align:center;font-size:14px;" class="mypage"><span> 共 5 页 页次 : 1/5 页</span><span class='nolink'>首页</span><span class='nolink'>上一页</span><span><font color=red>1</font></span><a href="?12_2.html">2</a><a href="?12_3.html">3</a><a href="?12_4.html">4</a><a href="?12_5.html">5</a><a href='?12_2.html'>下一页</a><a href='?12_5.html'>尾页</a> 转到 <SELECT NAME="select" ONCHANGE= {literal}"var jmpURL=this.options[this.selectedIndex].value ; if(jmpURL!='') {window.location=jmpURL;} else {this.selectedIndex=0 ;}{/literal}" ><option value=?12_1.html   selected=selected>1</option><option value=?12_2.html  >2</option><option value=?12_3.html  >3</option><option value=?12_4.html  >4</option><option value=?12_5.html  >5</option></SELECT></DIV>

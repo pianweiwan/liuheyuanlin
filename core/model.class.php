@@ -23,6 +23,12 @@ abstract class  Model{
         return static::$_instance;
     }
 
+    public function getOne($param) {
+        $res = $this->row($param);
+        $res = $res[0];
+        return $res;
+    }
+
     public function insert($params = array()) {
         $table = $this->_table;
         $sql = ' insert into '. $table;

@@ -25,11 +25,7 @@ class NewsModel extends Model {
         return $res;
     }
 
-    public function getOne($param) {
-        $res = $this->row($param);
-        $res = $res[0];
-        return $res;
-    }
+
 
     public function deleteNews($params) {
         $res = $this->delete($params);

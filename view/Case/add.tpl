@@ -2,7 +2,7 @@
 <div class="m-right">
     <div class="right-nav">
     </div>
-    <form id="addDesign" action="/design/upload" method="post" enctype="multipart/form-data">
+    <form id="addDesign" action="/case/upload" method="post" enctype="multipart/form-data">
     <div class="main" style="margin-left:6px">
         <script type="text/javascript" charset="utf-8" src="/static/js/ueditor/ueditor.config.js"></script>
         <script type="text/javascript" charset="utf-8" src="/static/js/ueditor/ueditor.all.js"> </script>

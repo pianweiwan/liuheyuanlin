@@ -51,7 +51,7 @@
 
 
                     <LI >
-                        <span><a href="/list/?2_1.html" class="nav_f">六合案例<i>Classic case</i></a></span>
+                        <span><a href="/case/index" class="nav_f">六合案例<i>Classic case</i></a></span>
 
                     </LI>
 

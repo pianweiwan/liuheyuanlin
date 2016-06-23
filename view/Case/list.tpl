@@ -1,7 +1,7 @@
 {include file="/view/mgr/layout/header.tpl"}
 <div class="m-right">
     <div class="right-nav">
-        <a href="/design/add" style="margin-left: 10px;">添加案例</a>
+        <a href="/case/add" style="margin-left: 10px;">添加案例</a>
     </div>
 
     <div class="main" style="height:90%">
@@ -17,12 +17,12 @@
             </thead>
 
             <tbody>
-            {foreach from=$news item=item}
-                <tr class="news_item" id="{$item['id']}">
+            {foreach from=$data item=item}
+                <tr class="case_item" id="{$item['id']}">
                     <td class="id">{$item['id']}</td>
-                    <td class="news_title"><a href ="/news/detail?id={$item['id']}" >{$item['title']}</a></td>
-                    <td class="news_time">{date('Y-m-d H:i:s', $item['time'])}</td>
-                    <td><a href="/news/detail?id={$item['id']}">详情</a>||<a href="/news/delete?id={$item['id']}">删除</a>||<a onclick="updateNews(this)">修改</a></td>
+                    <td class="case_title"><a href ="/case/detail?id={$item['id']}" >{$item['title']}</a></td>
+                    <td class="case_time">{date('Y-m-d H:i:s', $item['time'])}</td>
+                    <td><a href="/case/detail?id={$item['id']}">详情</a>||<a href="/case/delete?id={$item['id']}">删除</a>||<a onclick="updateNews(this)">修改</a></td>
                 </tr>
             {/foreach}
             </tbody>

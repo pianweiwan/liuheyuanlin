@@ -6,10 +6,35 @@
  * Time: 9:33
  */
 
-class DesignController extends Controller {
+class CaseController extends Controller {
+
+        //前台显示页面
+    public function actionFront() {
+        $cases = CaseModel::instance()->page(array('status'=>1), '*', 'id desc', 1, 10);
+        $data = array();
+        $data['cases'] = $cases;
+        return $this->display('index', $data);
+    }
+
 
     public function actionIndex() {
+        $cases = CaseModel::instance()->page(array('status'=>1), '*', 'id desc', 1, 10);
+        $data = array();
+        $data['cases'] = $cases;
+        return $this->display('index', $data);
         return $this->display('index');
+    }
+
+    public function actionDetail() {
+        !$this->_R('id') && die('error');
+        $id = $this->_R('id');
+        $case = CaseModel::instance()->getOne(['id'=>$id]);
+        if(empty($case)) {
+            die('error');
+        }
+        $data = array();
+        $data['data'] = $case;
+        return $this->display('detail', $data);
     }
 
     public function actionList() {
@@ -19,8 +44,15 @@ class DesignController extends Controller {
         if($_COOKIE['admin'] != 'admin') {
             return $this->error('管理员未登录');
         }
-
-        return $this->display('list');
+        $page = isset($_REQUEST['page']) ? intval($_REQUEST['pagesize']) : 1;
+        $page = isset($_REQUEST['pagesize']) ? intval($_REQUEST['pagesize']) : 10;
+        $res = CaseModel::instance()->page(array('status'=>1),$select = '*', $order = '', $page = 1, $pagesize = 10);
+//        var_dump($res);exit;
+        $data = array();
+        $data['data'] = $res;
+        $date['page'] = $page;
+        $date['pagesize'] = $pagesize;
+        return $this->display('list',$data);
     }
 
     public function actionAdd() {
@@ -48,16 +80,16 @@ class DesignController extends Controller {
         }
         $title = $_REQUEST['title'];
         $content = $_REQUEST['content'];
-//        var_dump($_FILES);exit;
-//        var_dump($_REQUEST);exit;
-
-
+        $suffix = $_FILES["cover"]["name"];
+        $temp = explode('.',$suffix);
+        $suffix = $temp[1];
         $name = $_COOKIE['admin'].time().'-'.rand(1,999);
-        $path = FILE_PATH.'design'.DS.'images'.DS.$name;
-        if(file_exists($path)) {
+        $path = DS.'static'.DS.'images'.DS.'case'.DS.$name.'.'.$suffix;
+        $realPath = STATIC_PATH.'images'.DS.'case'.DS.$name.'.'.$suffix;
+        if(file_exists($realPath)) {
             return $this->error('图片不能重复上传');
         }
-        $move = move_uploaded_file($_FILES["cover"]["tmp_name"], $path);
+        $move = move_uploaded_file($_FILES["cover"]["tmp_name"], $realPath);
         if(!$move) {
             return $this->error('图片上传失败');
         }
@@ -75,9 +107,6 @@ class DesignController extends Controller {
         }
 
         $this->error('添加成功');
-
-
-
 
     }
 
